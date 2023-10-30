@@ -1,1 +1,1 @@
-# fahil-7-wonders
+# This is a GitHub Pages repo for Fahilgroup's 7 Wonders statistics :)
