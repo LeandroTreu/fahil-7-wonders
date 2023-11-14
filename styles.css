@@ -19,6 +19,7 @@ main {
     background-color: #333;
     text-align: center;
     padding: 10px;
+    color: white;
 }
 
 nav {
@@ -57,7 +58,7 @@ li.selected a {
 
 
 /* START Drop-down menu stuff */
-.dropdown {
+/* .dropdown {
     display: inline-block;
     background-color: #65ac5f;
 }
@@ -85,8 +86,29 @@ li.selected a {
 
 .dropdown-content a:hover {
     background-color: #111;
-}
+} */
 /* END Drop-down menu stuff */
+
+/* New dropdown menu */
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+select,
+option {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+
+form {
+    background-color: #111;
+}
 
 
 

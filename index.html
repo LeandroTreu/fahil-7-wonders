@@ -43,20 +43,65 @@
 
         <main>
 
-            <li class="dropdown">
+            <!-- <li class="dropdown">
                 <a href="javascript:void(0)">Choose Statistic</a>
                 <div class="dropdown-content">
                   <a href="#stat1">stat1</a>
                   <a href="#service2">stat2</a>
                   <a href="#service3">stat3</a>
                 </div>
-            </li>
+            </li> -->
+
+            <form>
+                <label for="stats">Select a statistic:</label>
+                <select id="stats" name="stats" onchange="showContent()">
+                    <option value="Stat1">Stat1</option>
+                    <option value="Stat2">Stat2</option>
+                    <option value="Stat3">Stat3</option>
+                    <option value="Stat4">Stat4</option>
+                    <option value="Stat5">Stat5</option>
+                </select>
+            </form>
+            
+            <div id="Stat1Content" class="invisible visible">
+                <p>Content for Stat1</p>
+            </div>
+
+            <div id="Stat2Content" class="invisible">
+                <p>Content for Stat2</p>
+            </div>
+
+            <div id="Stat3Content" class="invisible">
+                <p>Content for Stat3</p>
+            </div>
+
+            <div id="Stat4Content" class="invisible">
+                <p>Content for Stat4</p>
+            </div>
+
+            <div id="Stat5Content" class="invisible">
+                <p>Content for Stat5</p>
+            </div>
             
         </main>
 
         <footer>
             <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
         </footer>
+
+        <script>
+            function showContent() {
+              var selectedStat = document.getElementById("stats").value;
+              var allContent = document.querySelectorAll(".invisible");
+              
+              for (var i = 0; i < allContent.length; i++) {
+                allContent[i].classList.remove("visible");
+              }
+        
+              var selectedContent = document.getElementById(selectedStat + "Content");
+              selectedContent.classList.add("visible");
+            }
+        </script>
 
 
     </body>
