@@ -17,7 +17,7 @@
         <meta name="author" content="Leandro Treu" />
         <meta name="description" content="This is the Fahilgroup's 7 Wonders Statistics Page" />
 
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <meta name="viewport" content="width=device-width" />
         
 
@@ -25,6 +25,8 @@
 
     <!-- BODY -->
     <body>
+
+        
 
         <header>
             <h1>Fahil 7 Wonders Stats</h1>
@@ -43,15 +45,6 @@
 
         <main>
 
-            <!-- <li class="dropdown">
-                <a href="javascript:void(0)">Choose Statistic</a>
-                <div class="dropdown-content">
-                  <a href="#stat1">stat1</a>
-                  <a href="#service2">stat2</a>
-                  <a href="#service3">stat3</a>
-                </div>
-            </li> -->
-
             <form>
                 <label for="stats">Select a statistic:</label>
                 <select id="stats" name="stats" onchange="showContent()">
@@ -65,6 +58,8 @@
             
             <div id="Stat1Content" class="invisible visible">
                 <p>Content for Stat1</p>
+                <div class="center-div"><canvas id="test_chart"></canvas></div>
+                
             </div>
 
             <div id="Stat2Content" class="invisible">
@@ -89,6 +84,8 @@
             <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
         </footer>
 
+        
+        <!-- Script for dropdown menu -->
         <script>
             function showContent() {
               var selectedStat = document.getElementById("stats").value;
@@ -102,6 +99,10 @@
               selectedContent.classList.add("visible");
             }
         </script>
+
+        <!-- Chart.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"></script>
+        <script type="module" src="js/test_chart.js"></script>
 
 
     </body>

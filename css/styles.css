@@ -22,6 +22,12 @@ main {
     color: white;
 }
 
+.center-div {
+    width: 500px;
+    margin: auto;
+    color: white;
+}
+
 nav {
     text-align: center;
     padding: 10px;
@@ -58,38 +64,6 @@ li.selected a {
 
 
 /* START Drop-down menu stuff */
-/* .dropdown {
-    display: inline-block;
-    background-color: #65ac5f;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #111;
-} */
-/* END Drop-down menu stuff */
-
-/* New dropdown menu */
 .invisible {
     display: none;
 }
@@ -109,6 +83,7 @@ option {
 form {
     background-color: #111;
 }
+/* END Drop-down menu stuff */
 
 
 
