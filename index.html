@@ -32,6 +32,8 @@
                 <h1>Fahil 7 Wonders Stats</h1>
             </header>
 
+            <div class="padding"></div>
+
             <nav>
 
                 <ul>
@@ -48,22 +50,27 @@
                 <form>
                     <label for="stats">Select a statistic:</label>
                     <select id="stats" name="stats" onchange="showContent()">
-                        <option value="Stat1">Stat1</option>
-                        <option value="Stat2">Stat2</option>
-                        <option value="Stat3">Stat3</option>
-                        <option value="Stat4">Stat4</option>
-                        <option value="Stat5">Stat5</option>
+                        <option value="Stat1">Wins</option>
+                        <option value="Stat2">Win Rate</option>
+                        <option value="Stat3">Avg Place</option>
+                        <option value="Stat4">Career Points</option>
+                        <option value="Stat5">Records</option>
+                        <option value="Stat6">Player Points Distribution</option>
+                        <option value="Stat7">Points Type Avg Points</option>
+                        <option value="Stat8">Points Type Winning Type</option>
                     </select>
                 </form>
                 
                 <div id="Stat1Content" class="invisible visible">
-                    <p>Content for Stat1</p>
+                    <h1>Wins</h1>
+                    <p>Total number of wins across all games per player</p>
                     <div class="center-div"><canvas id="test_chart"></canvas></div>
                     
                 </div>
 
                 <div id="Stat2Content" class="invisible">
-                    <p>Content for Stat2</p>
+                    <h1>Win Rate</h1>
+                    <p>Number of wins divided by number of games played per player</p>
                 </div>
 
                 <div id="Stat3Content" class="invisible">
@@ -78,7 +85,21 @@
                     <p>Content for Stat5</p>
                 </div>
                 
+                <div id="Stat6Content" class="invisible">
+                    <p>Content for Stat5</p>
+                </div>
+                
+                <div id="Stat7Content" class="invisible">
+                    <p>Content for Stat5</p>
+                </div>
+                
+                <div id="Stat8Content" class="invisible">
+                    <p>Content for Stat5</p>
+                </div>
+                
             </main>
+
+            <div class="padding"></div>
 
             <footer>
                 <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
