@@ -26,64 +26,65 @@
     <!-- BODY -->
     <body>
 
-        
+        <div class="center-container">
 
-        <header>
-            <h1>Fahil 7 Wonders Stats</h1>
-        </header>
+            <header>
+                <h1>Fahil 7 Wonders Stats</h1>
+            </header>
 
-        <nav>
+            <nav>
 
-            <ul>
-                <li class="selected"><a href="index.html">Stats</a></li>
-                <li><a href="games.html">Games</a></li>
-            </ul>
+                <ul>
+                    <li class="selected"><a href="index.html">Stats</a></li>
+                    <li><a href="games.html">Games</a></li>
+                </ul>
 
-        </nav>
+            </nav>
 
-        
-
-        <main>
-
-            <form>
-                <label for="stats">Select a statistic:</label>
-                <select id="stats" name="stats" onchange="showContent()">
-                    <option value="Stat1">Stat1</option>
-                    <option value="Stat2">Stat2</option>
-                    <option value="Stat3">Stat3</option>
-                    <option value="Stat4">Stat4</option>
-                    <option value="Stat5">Stat5</option>
-                </select>
-            </form>
             
-            <div id="Stat1Content" class="invisible visible">
-                <p>Content for Stat1</p>
-                <div class="center-div"><canvas id="test_chart"></canvas></div>
+
+            <main>
+
+                <form>
+                    <label for="stats">Select a statistic:</label>
+                    <select id="stats" name="stats" onchange="showContent()">
+                        <option value="Stat1">Stat1</option>
+                        <option value="Stat2">Stat2</option>
+                        <option value="Stat3">Stat3</option>
+                        <option value="Stat4">Stat4</option>
+                        <option value="Stat5">Stat5</option>
+                    </select>
+                </form>
                 
-            </div>
+                <div id="Stat1Content" class="invisible visible">
+                    <p>Content for Stat1</p>
+                    <div class="center-div"><canvas id="test_chart"></canvas></div>
+                    
+                </div>
 
-            <div id="Stat2Content" class="invisible">
-                <p>Content for Stat2</p>
-            </div>
+                <div id="Stat2Content" class="invisible">
+                    <p>Content for Stat2</p>
+                </div>
 
-            <div id="Stat3Content" class="invisible">
-                <p>Content for Stat3</p>
-            </div>
+                <div id="Stat3Content" class="invisible">
+                    <p>Content for Stat3</p>
+                </div>
 
-            <div id="Stat4Content" class="invisible">
-                <p>Content for Stat4</p>
-            </div>
+                <div id="Stat4Content" class="invisible">
+                    <p>Content for Stat4</p>
+                </div>
 
-            <div id="Stat5Content" class="invisible">
-                <p>Content for Stat5</p>
-            </div>
-            
-        </main>
+                <div id="Stat5Content" class="invisible">
+                    <p>Content for Stat5</p>
+                </div>
+                
+            </main>
 
-        <footer>
-            <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
-        </footer>
+            <footer>
+                <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
+            </footer>
 
+        </div>
         
         <!-- Script for dropdown menu -->
         <script>

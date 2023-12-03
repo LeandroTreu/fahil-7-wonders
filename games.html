@@ -26,26 +26,231 @@
     <!-- BODY -->
     <body>
 
-        <header>
-            <h1>Fahil 7 Wonders Stats</h1>
-        </header>
+        <div class="center-container">
+            
+            <header>
+                <h1>Fahil 7 Wonders Stats</h1>
+            </header>
+    
+            <nav>
+    
+                <ul>
+                    <li><a href="index.html">Stats</a></li>
+                    <li class="selected"><a href="games.html">Games</a></li>
+                </ul>
+    
+            </nav>
+    
+            <main>
+    
+                <form>
+                    <label for="games">Select a game:</label>
+                    <select id="games" name="games" onchange="showContent()">
+                        <option value="Game1">27.08.2023 - 1</option>
+                        <option value="Game2">Game2</option>
+                        <option value="Game3">Game3</option>
+                        <option value="Game4">Game4</option>
+                        <option value="Game5">Game5</option>
+                    </select>
+                </form>
+                
+                <div id="Game1Content" class="invisible visible">
 
-        <nav>
+                    <p>Game ID: 1</p>
+                    <p>Extensions</p>
+                    <table class="extensions-table">
+                        <tr>
+                            <th class="extensions-table-td">Leaders</th>
+                            <th class="extensions-table-td">Armada</th>
+                            <th class="extensions-table-td">Edifice</th>
+                            <th class="extensions-table-td">Cities</th>
+                        </tr>
+                        <tr>
+                            <td class="red-cell">No</td>
+                            <td class="red-cell">No</td>
+                            <td class="green-cell">Yes</td>
+                            <td class="red-cell">No</td>
+                        </tr>
+                    </table>
 
-            <ul>
-                <li><a href="index.html">Stats</a></li>
-                <li class="selected"><a href="games.html">Games</a></li>
-            </ul>
+                    <p></p>
 
-        </nav>
+                    <table>
+                        <tr>
+                            <th>Points Type</th>
+                            <th>Pascal</th>
+                            <th>Stanley</th>
+                            <th>Elena</th>
+                            <th>Fabio</th>
+                            <th>Alan</th>
+                            <th>Rafael</th>
+                            <th>Leandro</th>
+                            <th>Yara</th>
+                        </tr>
+                        <tr>
+                            <td>Wonder</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Money</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>War</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Blue</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Green</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Purple</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Cities</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Leaders</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sea War</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sea Cards</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
 
-        <main>
-            <p>soefnsoefnosfe</p>
-        </main>
+                </div>
+    
+                <div id="Game2Content" class="invisible">
+                    <p>Content for Game2</p>
+                </div>
+    
+                <div id="Game3Content" class="invisible">
+                    <p>Content for Game3</p>
+                </div>
+    
+                <div id="Game4Content" class="invisible">
+                    <p>Content for Game4</p>
+                </div>
+    
+                <div id="Game5Content" class="invisible">
+                    <p>Content for Game5</p>
+                </div>
+                
+            </main>
+    
+            <footer>
+                <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
+            </footer>
 
-        <footer>
-            <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
-        </footer>
+        </div>
+
+
+        <!-- Script for dropdown menu -->
+        <script>
+            function showContent() {
+              var selectedStat = document.getElementById("games").value;
+              var allContent = document.querySelectorAll(".invisible");
+              
+              for (var i = 0; i < allContent.length; i++) {
+                allContent[i].classList.remove("visible");
+              }
+        
+              var selectedContent = document.getElementById(selectedStat + "Content");
+              selectedContent.classList.add("visible");
+            }
+        </script>
 
 
     </body>
