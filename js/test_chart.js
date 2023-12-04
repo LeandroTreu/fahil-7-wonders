@@ -1,32 +1,31 @@
 (async function() {
 
-    
+  Chart.defaults.font.size = 18;
+  Chart.defaults.borderColor = '#9E9E9E';
+  Chart.defaults.color = '#FFF';
+  Chart.defaults.plugins.legend.display = false;
+
     const data = {
-      labels: [65, 59, 80, 81, 56, 55, 40],
+      labels: ['Elena', 'Pascal', 'Fabio', 'Rafael', 'Stanley', 'Leandro', 'Alan', 'Yara'],
       datasets: [{
         axis: 'y',
-        label: 'My First Dataset',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        label: 'Wins',
+        data: [5, 5, 3, 3, 1, 1, 0, 0],
         fill: false,
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(255, 205, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(201, 203, 207, 0.2)'
+          '#884EA0',
+          '#D4AC0D',
+          '#2E86C1',
+          '#A6ACAF',
+          '#CB4335',
+          '#229954',
+          '#BA4A00',
+          '#17A589'
         ],
-        borderColor: [
-          'rgb(255, 99, 132)',
-          'rgb(255, 159, 64)',
-          'rgb(255, 205, 86)',
-          'rgb(75, 192, 192)',
-          'rgb(54, 162, 235)',
-          'rgb(153, 102, 255)',
-          'rgb(201, 203, 207)'
-        ],
-        borderWidth: 1
+        borderWidth: 0,
+        minBarLength: 8,
+        // barThickness: 30,
+        categoryPercentage: 0.8
       }]
     };
 
@@ -34,7 +33,13 @@
       type: 'bar',
       data: data,
       options: {
+        scales: {
+          x: {
+            grace: '0%'
+          }
+        },
         indexAxis: 'y',
+        aspectRatio: 1.0
       }
     };
   

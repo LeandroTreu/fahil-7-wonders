@@ -28,8 +28,8 @@ main {
     width: 80%;
 }
 
-.center-div {
-    width: 500px;
+.chart-div {
+    width: 70%;
     margin: auto;
     color: white;
 }
@@ -55,13 +55,54 @@ th, td {
     font-size: 15px;
 }
 
+/* Table color cells */
 .green-cell {
     background-color: green;
 }
-
 .red-cell {
     background-color: red;
 }
+.wonder-cell {
+    background-color: #b28448;
+}
+.money-cell {
+    background-color: #c4813b;
+}
+.war-cell {
+    background-color: #a93e36;
+}
+.blue-cell {
+    background-color: #42739c;
+}
+.yellow-cell {
+    background-color: #c07e32;
+}
+.green-cards-cell {
+    background-color: #4f6a41;
+}
+.purple-cell {
+    background-color: #5d567f;
+}
+.cities-cell {
+    background-color: #5c4c3f;
+}
+.leaders-cell {
+    background-color: #a9a196;
+}
+.sea-war-cell {
+    background-color: #445778;
+}
+.sea-cards-cell {
+    background-color: #5882aa;
+}
+.sum-cell {
+    background-color: #b9ad9f;
+}
+.ranking-cell {
+    background-color: #b9ad9f;
+}
+
+
 
 .extensions-table {
     width: auto;
@@ -120,12 +161,14 @@ select,
 option {
     background-color: #171314;
     color: white;
-    padding: 5px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 25px;
 }
 
 form {
     background-color: #605D51;
+    padding: 5px;
+    font-size: 20px;
 }
 /* END Drop-down menu stuff */
 
