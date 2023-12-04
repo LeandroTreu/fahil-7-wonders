@@ -64,17 +64,19 @@
                 <div id="Stat1Content" class="invisible visible">
                     <!-- <h1>Wins</h1> -->
                     <p>Total number of wins across all games per player</p>
-                    <div class="chart-div"><canvas id="test_chart"></canvas></div>
+                    <div class="chart-div"><canvas id="wins_chart"></canvas></div>
                     
                 </div>
 
                 <div id="Stat2Content" class="invisible">
                     <!-- <h1>Win Rate</h1> -->
                     <p>Number of wins divided by number of games played per player</p>
+                    <div class="chart-div"><canvas id="win_rate_chart"></canvas></div>
                 </div>
 
                 <div id="Stat3Content" class="invisible">
-                    <!-- <p>Content for Stat3</p> -->
+                    <p>Average finishing position across all games per player</p>
+                    <div class="chart-div"><canvas id="avg_placing_chart"></canvas></div>
                 </div>
 
                 <div id="Stat4Content" class="invisible">
@@ -124,7 +126,9 @@
 
         <!-- Chart.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"></script>
-        <script type="module" src="js/test_chart.js"></script>
+        <script type="module" src="js/wins_chart.js"></script>
+        <script type="module" src="js/avg_placing_chart.js"></script>
+        <script type="module" src="js/win_rate_chart.js"></script>
 
 
     </body>

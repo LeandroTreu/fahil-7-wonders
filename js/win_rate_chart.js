@@ -9,8 +9,8 @@
       labels: ['Elena', 'Pascal', 'Fabio', 'Rafael', 'Stanley', 'Leandro', 'Alan', 'Yara'],
       datasets: [{
         axis: 'y',
-        label: 'Wins',
-        data: [5, 5, 3, 3, 1, 1, 0, 0],
+        label: 'Win Rate %',
+        data: [38.5, 31.3, 13.3, 12.5, 6.3, 6.3, 0.0, 0.0],
         fill: false,
         backgroundColor: [
           '#884EA0',
@@ -44,7 +44,7 @@
     };
   
     new Chart(
-      document.getElementById('test_chart'),
+      document.getElementById('win_rate_chart'),
       config
     );
 
