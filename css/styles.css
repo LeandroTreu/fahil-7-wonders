@@ -185,15 +185,47 @@ footer {
 /* Mobile: 481px */
 @media screen and (max-width: 481px) {
 
+    header {
+        background-color: #171314;
+        color: #B89951;
+        text-align: center;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav li {
+        font-size: 20px;
+        display: inline;
+    }
+
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+    }
+
+    .padding {
+        padding: 5px;
+    }
+
     .center-container {
         margin: auto;
-        width: 90%;
+        width: 100%;
     }
     
     .chart-div {
-        width: 70%;
+        width: 100%;
         margin: auto;
         color: white;
+    }
+
+    .extensions-table-td {
+        width: 30px;
     }
 
     th, td {
@@ -202,7 +234,7 @@ footer {
         text-align: left;
         background-color: #605D51;
         width: 20px;
-        font-size: 10px;
+        font-size: 7px;
     }
 
     select,
@@ -217,6 +249,14 @@ footer {
         background-color: #605D51;
         padding: 5px;
         font-size: 18px;
+    }
+
+    footer {
+        background-color: #171314;
+        color: #B89951;
+        font-size: 10px;
+        text-align: center;
+        padding: 10px;
     }
 }
 
