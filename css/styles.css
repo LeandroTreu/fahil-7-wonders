@@ -18,18 +18,18 @@ main {
     font-family: "geneva", sans-serif;
     background-color: #605D51;
     text-align: center;
-    padding: 30px 50px 500px 50px;
+    padding: 30px 50px 50px 50px;
     color: white;
 }
 
 
 .center-container {
     margin: auto;
-    width: 80%;
+    width: 1000px;
 }
 
 .chart-div {
-    width: 70%;
+    width: 550px;
     margin: auto;
     color: white;
 }
@@ -168,7 +168,7 @@ option {
 form {
     background-color: #605D51;
     padding: 5px;
-    font-size: 20px;
+    font-size: 25px;
 }
 /* END Drop-down menu stuff */
 
@@ -182,4 +182,41 @@ footer {
     padding: 10px;
 }
 
+/* Mobile: 481px */
+@media screen and (max-width: 481px) {
+
+    .center-container {
+        margin: auto;
+        width: 90%;
+    }
+    
+    .chart-div {
+        width: 70%;
+        margin: auto;
+        color: white;
+    }
+
+    th, td {
+        border: 1px solid white;
+        padding: 2px;
+        text-align: left;
+        background-color: #605D51;
+        width: 20px;
+        font-size: 10px;
+    }
+
+    select,
+    option {
+        background-color: #171314;
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    form {
+        background-color: #605D51;
+        padding: 5px;
+        font-size: 18px;
+    }
+}
 
