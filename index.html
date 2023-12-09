@@ -54,6 +54,7 @@
                         <option value="Stat2">Win Rate</option>
                         <option value="Stat3">Avg Place</option>
                         <option value="Stat4">Career Points</option>
+                        <option value="Stat9">Avg Points Per Game</option>
                         <option value="Stat5">Records</option>
                         <option value="Stat6">Player Points Distribution</option>
                         <option value="Stat7">Points Type Avg Points</option>
@@ -62,41 +63,144 @@
                 </form>
                 
                 <div id="Stat1Content" class="invisible visible">
-                    <!-- <h1>Wins</h1> -->
                     <p>Total number of wins across all games per player</p>
                     <div class="chart-div"><canvas id="wins_chart"></canvas></div>
                     
                 </div>
 
                 <div id="Stat2Content" class="invisible">
-                    <!-- <h1>Win Rate</h1> -->
                     <p>Number of wins divided by number of games played per player</p>
                     <div class="chart-div"><canvas id="win_rate_chart"></canvas></div>
                 </div>
-
+                
                 <div id="Stat3Content" class="invisible">
                     <p>Average finishing position across all games per player</p>
                     <div class="chart-div"><canvas id="avg_placing_chart"></canvas></div>
                 </div>
-
+                
                 <div id="Stat4Content" class="invisible">
-                    <!-- <p>Content for Stat4</p> -->
+                    <p>Total points scored across all games per player</p>
+                    <div class="chart-div"><canvas id="career_points_chart"></canvas></div>
                 </div>
-
+                
                 <div id="Stat5Content" class="invisible">
-                    <!-- <p>Content for Stat5</p> -->
+                    <!-- <h2>Records</h2> -->
+                    <div class="padding"></div>
+                    <div class="padding"></div>
+                    
+                    <!-- <div class="records-green"> -->
+                        <p>Most points scored in a game</p>
+                        <table>
+                            <tr>
+                                <th class="records-table-td">Name</th>
+                                <th class="records-table-td">Points</th>
+                                <th class="records-table-td">Game</th>
+                            </tr>
+                            <tr>
+                                <td class="records-table-td">Fabio</td>
+                                <td class="records-table-td">108</td>
+                                <td class="records-table-td">28.08.2023 - 1</td>
+                            </tr>
+                        </table>
+                    <!-- </div> -->
+                    
+                    <div class="padding"></div>
+                    <div class="padding"></div>
+
+                    <!-- <div class="records-green"> -->
+                        <p>Most points scored in a game with only leaders expansion</p>
+                        <table>
+                            <tr>
+                                <th class="records-table-td">Name</th>
+                                <th class="records-table-td">Points</th>
+                                <th class="records-table-td">Game</th>
+                            </tr>
+                            <tr>
+                                <td class="records-table-td">Pascal</td>
+                                <td class="records-table-td">94</td>
+                                <td class="records-table-td">2021 - 4</td>
+                            </tr>
+                        </table>
+                    <!-- </div> -->
+
+                    <div class="padding"></div>
+                    <div class="padding"></div>
+
+                    <!-- <div class="records-green"> -->
+                        <p>Least points scored in a game</p>
+                        <table>
+                            <tr>
+                                <th class="records-table-td">Name</th>
+                                <th class="records-table-td">Points</th>
+                                <th class="records-table-td">Game</th>
+                            </tr>
+                            <tr>
+                                <td class="records-table-td">Fabio</td>
+                                <td class="records-table-td">21</td>
+                                <td class="records-table-td">27.08.2023 - 3</td>
+                            </tr>
+                        </table>
+                    <!-- </div> -->
+
+                    <div class="padding"></div>
+                    <div class="padding"></div>
+
+                    <!-- <div class="records-green"> -->
+                        <p>Most points scored in a single category</p>
+                        <table>
+                            <tr>
+                                <th class="records-table-td">Name</th>
+                                <th class="records-table-td">Points</th>
+                                <th class="records-table-td">Points Type</th>
+                                <th class="records-table-td">Game</th>
+                            </tr>
+                            <tr>
+                                <td class="records-table-td">Stanley</td>
+                                <td class="records-table-td">76</td>
+                                <td class="records-table-td">Green Cards</td>
+                                <td class="records-table-td">19.11.2023 - 1</td>
+                            </tr>
+                        </table>
+                    <!-- </div> -->
+
+                    <div class="padding"></div>
+                    <div class="padding"></div>
+
+                    <!-- <div class="records-green"></div> -->
+                        <p>Least points scored in a single category</p>
+                        <table>
+                            <tr>
+                                <th class="records-table-td">Name</th>
+                                <th class="records-table-td">Points</th>
+                                <th class="records-table-td">Points Type</th>
+                                <th class="records-table-td">Game</th>
+                            </tr>
+                            <tr>
+                                <td class="records-table-td">Fabio</td>
+                                <td class="records-table-td">-9</td>
+                                <td class="records-table-td">Cities</td>
+                                <td class="records-table-td">27.08.2023 - 3</td>
+                            </tr>
+                        </table>
+                    <!-- </div> -->
+
                 </div>
                 
                 <div id="Stat6Content" class="invisible">
-                    <!-- <p>Content for Stat5</p> -->
+                    <p>Coming soon...</p>
                 </div>
                 
                 <div id="Stat7Content" class="invisible">
-                    <!-- <p>Content for Stat5</p> -->
+                    <p>Coming soon...</p>
                 </div>
                 
                 <div id="Stat8Content" class="invisible">
-                    <!-- <p>Content for Stat5</p> -->
+                    <p>Coming soon...</p>
+                </div>
+
+                <div id="Stat9Content" class="invisible">
+                    <p>Average points scored per game per player</p>
+                    <div class="chart-div"><canvas id="avg_points_chart"></canvas></div>
                 </div>
                 
             </main>
@@ -129,6 +233,8 @@
         <script type="module" src="js/wins_chart.js"></script>
         <script type="module" src="js/avg_placing_chart.js"></script>
         <script type="module" src="js/win_rate_chart.js"></script>
+        <script type="module" src="js/career_points_chart.js"></script>
+        <script type="module" src="js/avg_points_chart.js"></script>
 
 
     </body>

@@ -112,6 +112,17 @@ th, td {
     width: 60px;
 }
 
+.records-table-td {
+    width: 100px;
+}
+
+.records-green {
+    background-color: #4f6a41;
+    padding: 0px;
+    width: 70%;
+    margin: auto;
+}
+
 nav {
     text-align: center;
     padding: 0px;
@@ -234,6 +245,10 @@ footer {
 
     .extensions-table-td {
         width: 30px;
+    }
+
+    .records-table-td {
+        width: 50px;
     }
 
     th, td {
