@@ -53,12 +53,17 @@
                         <option value="Stat1">Wins</option>
                         <option value="Stat2">Win Rate</option>
                         <option value="Stat3">Avg Place</option>
+                        <option value="Stat12">StdDev Place</option>
                         <option value="Stat4">Career Points</option>
                         <option value="Stat9">Avg Points Per Game</option>
+                        <option value="Stat13">StdDev Points Per Game</option>
                         <option value="Stat5">Records</option>
-                        <option value="Stat6">Player Points Distribution</option>
+                        <option value="Stat6">Players Points Distribution</option>
+                        <option value="Stat14">Winner Points Distribution</option>
+                        <option value="Stat8" style="color: green;">New! - Winner Max Points Type</option>
+                        <option value="Stat11" style="color: green;">New! - Points Type Total Points</option>
                         <option value="Stat7">Points Type Avg Points</option>
-                        <option value="Stat8">Points Type Winning Type</option>
+                        <option value="Stat10">Points Type Avg Max Points</option>
                     </select>
                 </form>
                 
@@ -192,15 +197,38 @@
                 
                 <div id="Stat7Content" class="invisible">
                     <p>Coming soon...</p>
+                    <!-- <p>Average points scored in a points type in a game, averaged across all games</p> -->
                 </div>
                 
                 <div id="Stat8Content" class="invisible">
-                    <p>Coming soon...</p>
+                    <p>Counts how many times a points type has been the maximum score for the winning player, across all games</p>
+                    <div class="chart-div"><canvas id="winner_max_ptype_chart"></canvas></div>
                 </div>
 
                 <div id="Stat9Content" class="invisible">
                     <p>Average points scored per game per player</p>
                     <div class="chart-div"><canvas id="avg_points_chart"></canvas></div>
+                </div>
+
+                <div id="Stat10Content" class="invisible">
+                    <p>Coming soon...</p>
+                </div>
+
+                <div id="Stat11Content" class="invisible">
+                    <p>Total points scored by points type: sum over all games and all players</p>
+                    <div class="chart-div"><canvas id="ptype_total_chart"></canvas></div>
+                </div>
+
+                <div id="Stat12Content" class="invisible">
+                    <p>Coming soon...</p>
+                </div>
+
+                <div id="Stat13Content" class="invisible">
+                    <p>Coming soon...</p>
+                </div>
+
+                <div id="Stat14Content" class="invisible">
+                    <p>Coming soon...</p>
                 </div>
                 
             </main>
@@ -235,6 +263,8 @@
         <script type="module" src="js/win_rate_chart.js"></script>
         <script type="module" src="js/career_points_chart.js"></script>
         <script type="module" src="js/avg_points_chart.js"></script>
+        <script type="module" src="js/ptype_total_chart.js"></script>
+        <script type="module" src="js/winner_max_ptype_chart.js"></script>
 
 
     </body>
