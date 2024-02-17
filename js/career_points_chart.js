@@ -6,11 +6,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Pascal', 'Rafael', 'Leandro', 'Stanley', 'Elena', 'Fabio', 'Alan', 'Yara'],
+      labels: ['Pascal', 'Rafael', '\u2B06 Fabio', '\u2B07 Leandro', '\u2B07 Stanley', '\u2B07 Elena', 'Alan', 'Yara'],
       datasets: [{
         axis: 'y',
         label: 'Career Points',
-        data: [1102, 970, 947, 927, 906, 901, 179, 135],
+        data: [1651, 1471, 1433, 1371, 1307, 1136, 440, 135],
         fill: false,
         backgroundColor: [
           '#D4AC0D',

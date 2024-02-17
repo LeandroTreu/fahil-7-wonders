@@ -6,11 +6,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Elena', 'Pascal', 'Fabio', 'Rafael', 'Stanley', 'Leandro', 'Yara', 'Alan'],
+      labels: ['\u2B06 Pascal', '\u2B07 Elena', 'Fabio', 'Rafael', '\u2B06 Alan', '\u2B07 Stanley', '\u2B07 Leandro', '\u2B07 Yara'],
       datasets: [{
         axis: 'y',
-        label: 'Avg place',
-        data: [2.3, 2.5, 3.2, 3.6, 4.1, 4.2, 5.0, 5.7],
+        label: 'Avg Place',
+        data: [2.4, 2.6, 3.0, 3.3, 4.3, 4.4, 4.4, 5.0],
         fill: false,
         backgroundColor: [
           '#884EA0',

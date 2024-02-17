@@ -9,9 +9,9 @@
       labels: ['Wonder', 'Money', 'War', 'Blue', 'Yellow', 'Green', 'Purple', 'Cities', 'Leaders', 'Sea War', 'Sea Cards'],
       datasets: [{
         axis: 'y',
-        label: 'Total Points',
+        label: 'Wins',
         //     w  m  w  b  y  g  p  c  l  s  s
-        data: [2, 0, 1, 4, 0, 6, 4, 0, 0, 0, 0],
+        data: [2, 0, 1, 6, 1, 9, 3, 0, 0, 0, 0],
         fill: false,
         backgroundColor: [
           '#b28448',

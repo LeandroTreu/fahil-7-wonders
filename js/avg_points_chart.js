@@ -6,13 +6,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      // labels: ['Pascal', 'Rafael', 'Leandro', 'Stanley', 'Elena', 'Fabio', 'Alan', 'Yara'],
-      labels: ['Elena', 'Pascal', 'Yara', 'Rafael', 'Fabio', 'Alan', 'Leandro', 'Stanley'],
+      labels: ['\u2B06 Pascal', ' \u2B06 Alan', '\u2B07 Elena', '\u2B06 Fabio', '\u2B07 Yara', '\u2B07 Rafael', 'Leandro', 'Stanley'],
       datasets: [{
         axis: 'y',
         label: 'Avg Points per Game',
-        // data: [68.88, 60.63, 59.19, 57.94, 69.69, 60.07, 59.67, 67.50],
-        data: [69.69, 68.88, 67.50, 60.63, 60.07, 59.67, 59.19, 57.94],
+        data: [75.05, 73.33, 71.00, 68.24, 67.50, 66.86, 62.32, 59.41],
         fill: false,
         backgroundColor: [
           '#884EA0',

@@ -6,11 +6,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Elena', 'Pascal', 'Fabio', 'Rafael', 'Stanley', 'Leandro', 'Alan', 'Yara'],
+      labels: ['\u2B06 Pascal', '\u2B07 Elena', 'Fabio', 'Rafael', 'Stanley', 'Leandro', 'Alan', 'Yara'],
       datasets: [{
         axis: 'y',
         label: 'Win Rate %',
-        data: [38.5, 31.3, 13.3, 12.5, 6.3, 6.3, 0.0, 0.0],
+        data: [36.4, 31.2, 19.0, 13.6, 4.5, 4.5, 0.0, 0.0],
         fill: false,
         backgroundColor: [
           '#884EA0',

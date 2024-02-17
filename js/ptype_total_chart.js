@@ -10,7 +10,7 @@
       datasets: [{
         axis: 'y',
         label: 'Total Points',
-        data: [829, 504, 603, 1405, 440, 1087, 694, 46, 257, 119, 98],
+        data: [1217, 698, 798, 1963, 644, 1721, 999, 116, 412, 150, 226],
         fill: false,
         backgroundColor: [
           '#b28448',

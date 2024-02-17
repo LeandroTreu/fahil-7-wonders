@@ -6,11 +6,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Elena', 'Pascal', 'Fabio', 'Rafael', 'Stanley', 'Leandro', 'Alan', 'Yara'],
+      labels: [' \u2B06 Pascal', '\u2B07 Elena', 'Fabio', 'Rafael', 'Stanley', 'Leandro', 'Alan', 'Yara'],
       datasets: [{
         axis: 'y',
         label: 'Wins',
-        data: [5, 5, 2, 2, 1, 1, 0, 0],
+        data: [8, 5, 4, 3, 1, 1, 0, 0],
         fill: false,
         backgroundColor: [
           '#884EA0',
