@@ -1,4 +1,19 @@
+import { fetchAndParseJSON, color_map } from "./util.js";
+
 (async function() {
+
+  const stats = await fetchAndParseJSON("./stats.json");
+  let thisStat = stats["avgPlacing"];
+  thisStat = Object.entries(thisStat);
+  thisStat.sort((a, b) => a[1] - b[1]);
+  const names = []
+  const scores = []
+  const plot_colors = []
+  for (const entry of thisStat) {
+    names.push(entry[0]);
+    scores.push(entry[1]);
+    plot_colors.push(color_map[entry[0]]);
+  }
 
   Chart.defaults.font.size = 18;
   Chart.defaults.borderColor = '#9E9E9E';
@@ -6,22 +21,13 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['\u2B06 Pascal', '\u2B07 Elena', 'Fabio', 'Rafael', '\u2B06 Alan', '\u2B07 Stanley', '\u2B07 Leandro', '\u2B07 Yara'],
+      labels: names,
       datasets: [{
         axis: 'y',
         label: 'Avg Place',
-        data: [2.4, 2.6, 3.0, 3.3, 4.3, 4.4, 4.4, 5.0],
+        data: scores,
         fill: false,
-        backgroundColor: [
-          '#884EA0',
-          '#D4AC0D',
-          '#2E86C1',
-          '#A6ACAF',
-          '#CB4335',
-          '#229954',
-          '#BA4A00',
-          '#17A589'
-        ],
+        backgroundColor: plot_colors,
         borderWidth: 0,
         minBarLength: 8,
         // barThickness: 30,

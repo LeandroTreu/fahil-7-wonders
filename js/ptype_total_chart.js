@@ -1,4 +1,16 @@
+import { fetchAndParseJSON } from "./util.js";
+
 (async function() {
+
+  const stats = await fetchAndParseJSON("./stats.json");
+  let thisStat = stats["pointsTypeTotalPoints"];
+  thisStat = Object.entries(thisStat);
+  const names = []
+  const scores = []
+  for (const entry of thisStat) {
+    names.push(entry[0]);
+    scores.push(entry[1]);
+  }
 
   Chart.defaults.font.size = 18;
   Chart.defaults.borderColor = '#9E9E9E';
@@ -6,11 +18,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Wonder', 'Money', 'War', 'Blue', 'Yellow', 'Green', 'Purple', 'Cities', 'Leaders', 'Sea War', 'Sea Cards'],
+      labels: names,
       datasets: [{
         axis: 'y',
         label: 'Total Points',
-        data: [1217, 698, 798, 1963, 644, 1721, 999, 116, 412, 150, 226],
+        data: scores,
         fill: false,
         backgroundColor: [
           '#b28448',

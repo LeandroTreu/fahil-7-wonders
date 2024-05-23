@@ -1,4 +1,16 @@
+import { fetchAndParseJSON } from "./util.js";
+
 (async function() {
+
+  const stats = await fetchAndParseJSON("./stats.json");
+  let thisStat = stats["pointsTypeAvgMaxPoints"];
+  thisStat = Object.entries(thisStat);
+  const names = []
+  const scores = []
+  for (const entry of thisStat) {
+    names.push(entry[0]);
+    scores.push(entry[1]);
+  }
 
   Chart.defaults.font.size = 18;
   Chart.defaults.borderColor = '#9E9E9E';
@@ -6,11 +18,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Wonder', 'Money', 'War', 'Blue', 'Yellow', 'Green', 'Purple', 'Cities', 'Leaders', 'Sea War', 'Sea Cards'],
+      labels: names,
       datasets: [{
         axis: 'y',
         label: 'Avg Max Points',
-        data: [17.77, 11.27, 16.64, 31.55, 12.55, 46.05, 18.64, 10.17, 14.15, 13.00, 9.86],
+        data: scores,
         fill: false,
         backgroundColor: [
           '#b28448',

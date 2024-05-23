@@ -1,3 +1,5 @@
+import { fetchAndParseJSON } from "./util.js";
+
 (async function() {
 
   Chart.defaults.font.size = 18;

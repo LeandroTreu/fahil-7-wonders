@@ -1,4 +1,16 @@
+import { fetchAndParseJSON } from "./util.js";
+
 (async function() {
+
+  const stats = await fetchAndParseJSON("./stats.json");
+  let thisStat = stats["winnerMaxPointsType"];
+  thisStat = Object.entries(thisStat);
+  const names = []
+  const scores = []
+  for (const entry of thisStat) {
+    names.push(entry[0]);
+    scores.push(entry[1]);
+  }
 
   Chart.defaults.font.size = 18;
   Chart.defaults.borderColor = '#9E9E9E';
@@ -6,12 +18,11 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Wonder', 'Money', 'War', 'Blue', 'Yellow', 'Green', 'Purple', 'Cities', 'Leaders', 'Sea War', 'Sea Cards'],
+      labels: names,
       datasets: [{
         axis: 'y',
         label: 'Wins',
-        //     w  m  w  b  y  g  p  c  l  s  s
-        data: [2, 0, 1, 6, 1, 9, 3, 0, 0, 0, 0],
+        data: scores,
         fill: false,
         backgroundColor: [
           '#b28448',

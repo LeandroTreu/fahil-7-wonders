@@ -1,4 +1,19 @@
+import { fetchAndParseJSON, color_map } from "./util.js";
+
 (async function() {
+
+  const stats = await fetchAndParseJSON("./stats.json");
+  let thisStat = stats["careerPoints"];
+  thisStat = Object.entries(thisStat);
+  thisStat.sort((a, b) => b[1] - a[1]);
+  const names = []
+  const scores = []
+  const plot_colors = []
+  for (const entry of thisStat) {
+    names.push(entry[0]);
+    scores.push(entry[1]);
+    plot_colors.push(color_map[entry[0]]);
+  }
 
   Chart.defaults.font.size = 18;
   Chart.defaults.borderColor = '#9E9E9E';
@@ -6,22 +21,13 @@
   Chart.defaults.plugins.legend.display = false;
 
     const data = {
-      labels: ['Pascal', 'Rafael', '\u2B06 Fabio', '\u2B07 Leandro', '\u2B07 Stanley', '\u2B07 Elena', 'Alan', 'Yara'],
+      labels: names,
       datasets: [{
         axis: 'y',
         label: 'Career Points',
-        data: [1651, 1471, 1433, 1371, 1307, 1136, 440, 135],
+        data: scores,
         fill: false,
-        backgroundColor: [
-          '#D4AC0D',
-          '#A6ACAF',
-          '#229954',
-          '#CB4335',
-          '#884EA0',
-          '#2E86C1',
-          '#BA4A00',
-          '#17A589'
-        ],
+        backgroundColor: plot_colors,
         borderWidth: 0,
         minBarLength: 8,
         // barThickness: 30,
