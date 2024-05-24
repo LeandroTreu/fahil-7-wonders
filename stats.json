@@ -1,1 +1,101 @@
-{"wins": {"Pascal": 8, "Elena": 5, "Fabio": 4, "Rafael": 3, "Stanley": 1, "Leandro": 1, "Alan": 0, "Yara": 0}, "winrate": {"Pascal": 36.4, "Elena": 31.2, "Fabio": 19.0, "Rafael": 13.6, "Stanley": 4.5, "Leandro": 4.5, "Alan": 0.0, "Yara": 0.0}, "avgPlacing": {"Pascal": 2.4, "Elena": 2.6, "Fabio": 3.0, "Rafael": 3.3, "Alan": 4.3, "Stanley": 4.4, "Leandro": 4.4, "Yara": 5.0}, "careerPoints": {"Pascal": 1651, "Rafael": 1471, "Fabio": 1433, "Leandro": 1371, "Stanley": 1307, "Elena": 1136, "Alan": 440, "Yara": 135}, "gamesPlayed": {"Pascal": 22, "Stanley": 22, "Rafael": 22, "Leandro": 22, "Fabio": 21, "Elena": 16, "Alan": 6, "Yara": 2}, "avgPointsPerGame": {"Pascal": 75.05, "Alan": 73.33, "Elena": 71.0, "Fabio": 68.24, "Yara": 67.5, "Rafael": 66.86, "Leandro": 62.32, "Stanley": 59.41}, "winnerMaxPointsType": {"wonder": 2, "money": 0, "war": 1, "blue_cards": 6, "yellow_cards": 1, "green_cards": 9, "purple_cards": 3, "cities": 0, "leaders": 0, "sea_war": 0, "sea_cards": 0}, "pointsTypeTotalPoints": {"wonder": 1217, "money": 698, "war": 798, "blue_cards": 1963, "yellow_cards": 644, "green_cards": 1721, "purple_cards": 999, "cities": 116, "leaders": 412, "sea_war": 150, "sea_cards": 226}, "pointsTypeAvgMaxPoints": {"wonder": 17.77, "money": 11.27, "war": 16.64, "blue_cards": 31.55, "yellow_cards": 12.55, "green_cards": 46.05, "purple_cards": 18.64, "cities": 10.17, "leaders": 14.15, "sea_war": 13.0, "sea_cards": 9.86}}
+{
+ "wins": {
+  "Pascal": 8,
+  "Elena": 5,
+  "Fabio": 4,
+  "Rafael": 3,
+  "Stanley": 1,
+  "Leandro": 1,
+  "Alan": 0,
+  "Yara": 0
+ },
+ "winrate": {
+  "Pascal": 36.4,
+  "Elena": 31.2,
+  "Fabio": 19.0,
+  "Rafael": 13.6,
+  "Stanley": 4.5,
+  "Leandro": 4.5,
+  "Alan": 0.0,
+  "Yara": 0.0
+ },
+ "avgPlacing": {
+  "Pascal": 2.4,
+  "Elena": 2.6,
+  "Fabio": 3.0,
+  "Rafael": 3.3,
+  "Alan": 4.3,
+  "Stanley": 4.4,
+  "Leandro": 4.4,
+  "Yara": 5.0
+ },
+ "careerPoints": {
+  "Pascal": 1651,
+  "Rafael": 1471,
+  "Fabio": 1433,
+  "Leandro": 1371,
+  "Stanley": 1307,
+  "Elena": 1136,
+  "Alan": 440,
+  "Yara": 135
+ },
+ "gamesPlayed": {
+  "Pascal": 22,
+  "Stanley": 22,
+  "Rafael": 22,
+  "Leandro": 22,
+  "Fabio": 21,
+  "Elena": 16,
+  "Alan": 6,
+  "Yara": 2
+ },
+ "avgPointsPerGame": {
+  "Pascal": 75.05,
+  "Alan": 73.33,
+  "Elena": 71.0,
+  "Fabio": 68.24,
+  "Yara": 67.5,
+  "Rafael": 66.86,
+  "Leandro": 62.32,
+  "Stanley": 59.41
+ },
+ "winnerMaxPointsType": {
+  "wonder": 2,
+  "money": 0,
+  "war": 1,
+  "blue_cards": 6,
+  "yellow_cards": 1,
+  "green_cards": 9,
+  "purple_cards": 3,
+  "cities": 0,
+  "leaders": 0,
+  "sea_war": 0,
+  "sea_cards": 0
+ },
+ "pointsTypeTotalPoints": {
+  "wonder": 1217,
+  "money": 698,
+  "war": 798,
+  "blue_cards": 1963,
+  "yellow_cards": 644,
+  "green_cards": 1721,
+  "purple_cards": 999,
+  "cities": 116,
+  "leaders": 412,
+  "sea_war": 150,
+  "sea_cards": 226
+ },
+ "pointsTypeAvgMaxPoints": {
+  "wonder": 17.77,
+  "money": 11.27,
+  "war": 16.64,
+  "blue_cards": 31.55,
+  "yellow_cards": 12.55,
+  "green_cards": 46.05,
+  "purple_cards": 18.64,
+  "cities": 10.17,
+  "leaders": 14.15,
+  "sea_war": 13.0,
+  "sea_cards": 9.86
+ }
+}
