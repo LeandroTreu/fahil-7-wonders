@@ -1,10 +1,8 @@
 <!doctype html>
 
 <html lang="en-US">
-
     <!-- HEAD -->
     <head>
-
         <meta charset="utf-8" />
 
         <title>Fahil 7 Wonders</title>
@@ -19,8 +17,6 @@
 
         <link rel="stylesheet" href="css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-
     </head>
 
     <!-- BODY -->
@@ -31,7 +27,6 @@
             <header>
                 <h1>Fahil 7 Wonders Stats</h1>
             </header>
-
             <div class="padding"></div>
 
             <nav>
@@ -43,8 +38,6 @@
 
             </nav>
 
-            
-
             <main>
 
                 <form>
@@ -52,6 +45,7 @@
                         <option value="Stat1">Wins</option>
                         <option value="Stat2">Win Rate</option>
                         <option value="Stat3">Avg Place</option>
+                        <option value="Stat15">Games Played</option>
                         <!-- <option value="Stat12">StdDev Place</option> -->
                         <!-- <option value="Stat4">Career Points</option> -->
                         <!-- <option value="Stat9">Avg Points Per Game</option> -->
@@ -179,11 +173,9 @@
                 </div>
                 
                 <div id="Stat6Content" class="invisible">
-                    <p>Coming soon...</p>
                 </div>
                 
                 <div id="Stat7Content" class="invisible">
-                    <p>Coming soon...</p>
                     <!-- <p>Average points scored in a points type in a game, averaged across all games</p>
                     <div class="chart-div"><canvas id="ptype_avg_chart"></canvas></div> -->
                 </div>
@@ -209,15 +201,17 @@
                 </div>
 
                 <div id="Stat12Content" class="invisible">
-                    <p>Coming soon...</p>
                 </div>
 
                 <div id="Stat13Content" class="invisible">
-                    <p>Coming soon...</p>
                 </div>
 
                 <div id="Stat14Content" class="invisible">
-                    <p>Coming soon...</p>
+                </div>
+
+                <div id="Stat15Content" class="invisible">
+                    <p>Total number of games played per player</p>
+                    <div class="chart-div"><canvas id="gamesPlayed_chart"></canvas></div>
                 </div>
                 
             </main>
@@ -248,6 +242,7 @@
         <!-- Chart.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"></script>
         <script type="module" src="js/wins_chart.js"></script>
+        <script type="module" src="js/games_played.js"></script>
         <script type="module" src="js/avg_placing_chart.js"></script>
         <script type="module" src="js/win_rate_chart.js"></script>
         <!-- <script type="module" src="js/career_points_chart.js"></script> -->
