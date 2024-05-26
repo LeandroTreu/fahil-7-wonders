@@ -97,5 +97,136 @@
   "leaders": 14.07,
   "sea_war": 12.4,
   "sea_cards": 11.1
+ },
+ "playersPointsDistributions": {
+  "Pascal": {
+   "wonder": 10.55,
+   "money": 7.94,
+   "war": 10.2,
+   "blue_cards": 20.43,
+   "yellow_cards": 9.27,
+   "green_cards": 18.73,
+   "purple_cards": 9.65,
+   "cities": 5.04,
+   "leaders": 11.18,
+   "sea_war": 9.66,
+   "sea_cards": 4.66
+  },
+  "Stanley": {
+   "wonder": 16.2,
+   "money": 6.95,
+   "war": 5.09,
+   "blue_cards": 24.05,
+   "yellow_cards": 7.91,
+   "green_cards": 23.69,
+   "purple_cards": 8.36,
+   "cities": 7.76,
+   "leaders": 4.76,
+   "sea_war": -2.56,
+   "sea_cards": 10.16
+  },
+  "Elena": {
+   "wonder": 11.63,
+   "money": 8.7,
+   "war": 9.32,
+   "blue_cards": 25.77,
+   "yellow_cards": 7.3,
+   "green_cards": 15.57,
+   "purple_cards": 12.05,
+   "cities": 0.31,
+   "leaders": 7.88,
+   "sea_war": 5.72,
+   "sea_cards": 10.38
+  },
+  "Fabio": {
+   "wonder": 15.11,
+   "money": 5.85,
+   "war": 7.5,
+   "blue_cards": 17.83,
+   "yellow_cards": 4.5,
+   "green_cards": 30.95,
+   "purple_cards": 11.7,
+   "cities": -5.14,
+   "leaders": 8.17,
+   "sea_war": 0.15,
+   "sea_cards": 8.04
+  },
+  "Alan": {
+   "wonder": 14.58,
+   "money": 7.74,
+   "war": 9.22,
+   "blue_cards": 15.72,
+   "yellow_cards": 9.0,
+   "green_cards": 20.08,
+   "purple_cards": 10.03,
+   "cities": -1.39,
+   "leaders": 4.75,
+   "sea_war": 11.12,
+   "sea_cards": 6.62
+  },
+  "Rafael": {
+   "wonder": 13.79,
+   "money": 9.35,
+   "war": 7.89,
+   "blue_cards": 20.95,
+   "yellow_cards": 8.07,
+   "green_cards": 14.64,
+   "purple_cards": 14.19,
+   "cities": 10.05,
+   "leaders": 7.5,
+   "sea_war": 4.56,
+   "sea_cards": 5.95
+  },
+  "Leandro": {
+   "wonder": 13.87,
+   "money": 5.93,
+   "war": 9.2,
+   "blue_cards": 28.49,
+   "yellow_cards": 4.37,
+   "green_cards": 16.7,
+   "purple_cards": 12.67,
+   "cities": 4.23,
+   "leaders": 6.69,
+   "sea_war": 3.92,
+   "sea_cards": 5.86
+  },
+  "Yara": {
+   "wonder": 11.22,
+   "money": 14.29,
+   "war": 20.57,
+   "blue_cards": 13.89,
+   "yellow_cards": 10.4,
+   "green_cards": 1.0,
+   "purple_cards": 14.89,
+   "cities": 18.18,
+   "leaders": 10.39,
+   "sea_war": 4.67,
+   "sea_cards": 1.67
+  }
+ },
+ "winnerPointsDistribution": {
+  "winner": {
+   "wonder": 11.68,
+   "money": 6.91,
+   "war": 11.14,
+   "blue_cards": 17.15,
+   "yellow_cards": 6.01,
+   "green_cards": 27.72,
+   "purple_cards": 8.43,
+   "cities": 6.07,
+   "leaders": 9.16,
+   "sea_war": 4.13,
+   "sea_cards": 6.39
+  }
+ },
+ "playersAvgPointsPercentage": {
+  "Pascal": 89.36,
+  "Elena": 88.95,
+  "Yara": 83.19,
+  "Fabio": 81.6,
+  "Rafael": 80.57,
+  "Alan": 78.11,
+  "Leandro": 76.17,
+  "Stanley": 72.34
  }
 }

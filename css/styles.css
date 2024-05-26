@@ -31,6 +31,7 @@ main {
 .chart-div {
     width: 550px;
     margin: auto;
+    padding-bottom: 50px;
     color: white;
 }
 
@@ -240,6 +241,7 @@ footer {
     .chart-div {
         width: 100%;
         margin: auto;
+        padding-bottom: 50px;
         color: white;
     }
 

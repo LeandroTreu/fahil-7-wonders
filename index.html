@@ -46,6 +46,9 @@
                         <option value="Stat2">Win Rate</option>
                         <option value="Stat3">Avg Place</option>
                         <option value="Stat15">Games Played</option>
+                        <option value="Stat16">Avg Points Percentage</option>
+                        <option value="Stat18">Players Points Distribution</option>
+                        <option value="Stat17">Winner Points Distribution</option>
                         <!-- <option value="Stat12">StdDev Place</option> -->
                         <!-- <option value="Stat4">Career Points</option> -->
                         <!-- <option value="Stat9">Avg Points Per Game</option> -->
@@ -63,24 +66,19 @@
                 <div id="Stat1Content" class="invisible visible">
                     <p>Total number of wins across all games per player</p>
                     <div class="chart-div"><canvas id="wins_chart"></canvas></div>
-                    
                 </div>
-
                 <div id="Stat2Content" class="invisible">
                     <p>Number of wins divided by number of games played per player</p>
                     <div class="chart-div"><canvas id="win_rate_chart"></canvas></div>
                 </div>
-                
                 <div id="Stat3Content" class="invisible">
                     <p>Average finishing position across all games per player</p>
                     <div class="chart-div"><canvas id="avg_placing_chart"></canvas></div>
                 </div>
-                
                 <div id="Stat4Content" class="invisible">
                     <p>Total points scored across all games per player</p>
                     <div class="chart-div"><canvas id="career_points_chart"></canvas></div>
                 </div>
-                
                 <div id="Stat5Content" class="invisible">
                     <div class="padding"></div>
                     <div class="padding"></div>
@@ -171,53 +169,66 @@
                             </tr>
                         </table>
                 </div>
-                
                 <div id="Stat6Content" class="invisible">
                 </div>
-                
                 <div id="Stat7Content" class="invisible">
                     <!-- <p>Average points scored in a points type in a game, averaged across all games</p>
                     <div class="chart-div"><canvas id="ptype_avg_chart"></canvas></div> -->
                 </div>
-                
                 <div id="Stat8Content" class="invisible">
                     <p>Counts how many times a points type has been the maximum score for the winning player, across all games</p>
                     <div class="chart-div"><canvas id="winner_max_ptype_chart"></canvas></div>
                 </div>
-
                 <div id="Stat9Content" class="invisible">
                     <p>Average points scored per game per player</p>
                     <div class="chart-div"><canvas id="avg_points_chart"></canvas></div>
                 </div>
-
                 <div id="Stat10Content" class="invisible">
                     <p>Maximum points scored in a points type in a game, averaged across all games</p>
                     <div class="chart-div"><canvas id="ptype_avg_max_chart"></canvas></div>
                 </div>
-
                 <div id="Stat11Content" class="invisible">
                     <p>Total points scored by points type: sum over all games and all players</p>
                     <div class="chart-div"><canvas id="ptype_total_chart"></canvas></div>
                 </div>
-
                 <div id="Stat12Content" class="invisible">
                 </div>
-
                 <div id="Stat13Content" class="invisible">
                 </div>
-
                 <div id="Stat14Content" class="invisible">
                 </div>
-
                 <div id="Stat15Content" class="invisible">
                     <p>Total number of games played per player</p>
                     <div class="chart-div"><canvas id="gamesPlayed_chart"></canvas></div>
                 </div>
-                
+                <div id="Stat16Content" class="invisible">
+                    <p>Percentage of points a player scores relative to the points of the winner, averaged across all games</p>
+                    <div class="chart-div"><canvas id="avgPointsPercentage_chart"></canvas></div>
+                </div>
+                <div id="Stat17Content" class="invisible">
+                    <p>Average points distribution across all game winners</p>
+                    <div class="chart-div"><canvas id="winnerPointsDistribution_chart"></canvas></div>
+                </div>
+                <div id="Stat18Content" class="invisible">
+                    <p>Pascal</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Pascal"></canvas></div>
+                    <p>Stanley</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Stanley"></canvas></div>
+                    <p>Elena</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Elena"></canvas></div>
+                    <p>Fabio</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Fabio"></canvas></div>
+                    <p>Alan</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Alan"></canvas></div>
+                    <p>Rafael</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Rafael"></canvas></div>
+                    <p>Leandro</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Leandro"></canvas></div>
+                    <p>Yara</p>
+                    <div class="chart-div"><canvas id="playersPointsDistributions_chart_Yara"></canvas></div>
+                </div>
             </main>
-
             <div class="padding"></div>
-
             <footer>
                 <p>©Copyright 2023 by Leandro Treu. All rights reserved.</p>
             </footer>
@@ -244,7 +255,10 @@
         <script type="module" src="js/wins_chart.js"></script>
         <script type="module" src="js/games_played.js"></script>
         <script type="module" src="js/avg_placing_chart.js"></script>
+        <script type="module" src="js/avg_points_percentage.js"></script>
         <script type="module" src="js/win_rate_chart.js"></script>
+        <script type="module" src="js/players_points_distribution.js"></script>
+        <script type="module" src="js/winner_points_distribution.js"></script>
         <!-- <script type="module" src="js/career_points_chart.js"></script> -->
         <!-- <script type="module" src="js/avg_points_chart.js"></script> -->
         <script type="module" src="js/ptype_total_chart.js"></script>
