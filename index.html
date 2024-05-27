@@ -44,7 +44,8 @@
                     <select id="stats" name="stats" onchange="showContent()">
                         <option value="Stat1">Wins</option>
                         <option value="Stat2">Win Rate</option>
-                        <option value="Stat3">Avg Place</option>
+                        <option value="Stat3">Avg Placing</option>
+                        <option value="Stat19">Players Placing Distribution</option>
                         <option value="Stat15">Games Played</option>
                         <option value="Stat16">Avg Points Percentage</option>
                         <option value="Stat18">Players Points Distribution</option>
@@ -227,6 +228,24 @@
                     <p>Yara</p>
                     <div class="chart-div"><canvas id="playersPointsDistributions_chart_Yara"></canvas></div>
                 </div>
+                <div id="Stat19Content" class="invisible">
+                    <p>Pascal</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Pascal"></canvas></div>
+                    <p>Stanley</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Stanley"></canvas></div>
+                    <p>Elena</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Elena"></canvas></div>
+                    <p>Fabio</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Fabio"></canvas></div>
+                    <p>Alan</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Alan"></canvas></div>
+                    <p>Rafael</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Rafael"></canvas></div>
+                    <p>Leandro</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Leandro"></canvas></div>
+                    <p>Yara</p>
+                    <div class="chart-div"><canvas id="playersPlacingDistributions_chart_Yara"></canvas></div>
+                </div>
             </main>
             <div class="padding"></div>
             <footer>
@@ -258,6 +277,7 @@
         <script type="module" src="js/avg_points_percentage.js"></script>
         <script type="module" src="js/win_rate_chart.js"></script>
         <script type="module" src="js/players_points_distribution.js"></script>
+        <script type="module" src="js/players_placing_distribution.js"></script>
         <script type="module" src="js/winner_points_distribution.js"></script>
         <!-- <script type="module" src="js/career_points_chart.js"></script> -->
         <!-- <script type="module" src="js/avg_points_chart.js"></script> -->
